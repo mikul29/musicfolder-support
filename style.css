@@ -747,6 +747,28 @@ footer {
 
 .footer-meta a:hover { color: var(--orange-deep); }
 
+.footer-credits {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem 1.75rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 1.25rem;
+}
+
+.footer-credits p {
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: var(--ink-4);
+}
+
+.footer-credits a {
+  color: var(--ink-4);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer-credits a:hover { color: var(--ink-3); }
+
 /* Reveal animation */
 @media (prefers-reduced-motion: no-preference) {
   .hero, .form-section, .faq-section {
@@ -783,6 +805,7 @@ footer {
   .form-section { padding: 2rem 1.5rem; }
   .hero { padding: 2.5rem 0 3.5rem; }
   .footer-inner { padding: 2rem 1.5rem; }
+  .footer-credits { padding-left: 1.5rem; padding-right: 1.5rem; }
 }
 
 /* iPhone and small phones — comprehensive overrides */
@@ -955,6 +978,10 @@ footer {
     flex-direction: column;
     text-align: center;
     gap: 0.6rem;
+  }
+  .footer-credits {
+    padding: 1.25rem 1rem 1.5rem;
+    text-align: center;
   }
 
   /* Ambient blob smaller and fully on-screen on mobile */
