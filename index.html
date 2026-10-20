@@ -9,8 +9,9 @@
 <meta http-equiv="refresh" content="0; url=https://mikul29.github.io/musicfolder.app/support.html">
 <script>
   // keep any #section (e.g. #privacy, #faq, #form) when forwarding
-  var hash = location.hash === '#form' ? '#report' : location.hash;
-  location.replace('https://mikul29.github.io/musicfolder.app/support.html' + hash);
+  var base = 'https://mikul29.github.io/musicfolder.app/';
+  var h = location.hash;
+  location.replace(h === '#privacy' ? base + 'privacy.html' : base + 'support.html' + (h === '#form' ? '#report' : h));
 </script>
 <style>
   body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #FBFAF8; color: #1A1815;
@@ -26,7 +27,7 @@
   <h1>Music Folder Support has moved</h1>
   <p>Find help, answers and the report form at <a href="https://mikul29.github.io/musicfolder.app/support.html">mikul29.github.io/musicfolder.app/support.html</a>.</p>
   <div class="privacy" id="privacy">
-    <p><strong>Privacy:</strong> Music Folder doesn't collect any personal data. Your sheet music, folders, set lists and annotations are stored on your device and in your own iCloud account. There are no servers that hold your content. Full details: <a href="https://mikul29.github.io/musicfolder.app/support.html#privacy">Privacy</a>.</p>
+    <p><strong>Privacy:</strong> Music Folder doesn't collect any personal data. Your sheet music, folders, set lists and annotations are stored on your device and in your own iCloud account. There are no servers that hold your content. Full policy: <a href="https://mikul29.github.io/musicfolder.app/privacy.html">Privacy policy</a>.</p>
   </div>
 </main>
 </body>
